@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'cygre';
+    src: url('C:/Users/admin/OneDrive/Documents/Personal Projects/Mini projects/Tip Calculator/Source/Cygre/Cygre-Regular-BF63eeebf4df0b6.ttf');
+}
+
+
+body{
+    background: #EBEBEB;
+    margin: 0;
+}
+
+.cmtt{
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+}
+
+.background{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sbh{
+    position: absolute;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    margin: auto;
+    width: 95vw;
+    height: 90vh;
+    border: 1px solid;
+    border-radius: 50px;
+    backdrop-filter: blur(9px);
+
+}
+
+.s1{
+    width: 38vh;
+    bottom: -10vh;
+    left: -1vw;
+    transform: rotate(32deg);
+    
+}
+
+.s2{
+    width: 42vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.s3{
+    width: 20vw;
+    bottom: -10vh;
+    right: 14vw;
+}
+
+.s4{
+    width: 32vw;
+    top: -10vh;
+    left: 14vw;
+}
+
+.s5{
+    width: 22vw;
+    top: 8vh;
+    right: -8vw;
+}
+
+.s6{
+    width: 58vw;
+    right: -16vw;
+    top: -38vh;
+    transform: rotate(-35deg);
+    
+}
+
+.s7{
+    width: 86vw;
+    left: -32vw;
+    top: -46vh;
+    transform: rotate(160.61deg);
+}
+
+
+h1{
+    text-align: center;
+    margin: 5vw;
+    font-family: cygre;
+
+}
+.vbc{
+    display: grid;
+    place-items: center;
+    
+    font-family: cygre;
+}
+.center{
+    width:max-content;
+    height:max-content;
+}
+.fsx{
+    display: flex;
+}
+
+#lbl{
+    display: block;
+    width: 18vw;
+    text-align: right;
+    margin: 12px;
+    font-size: 22px;
+}
+
+.inp{
+    /* display: block; */
+    width:16vw;
+    height: 2vw;
+    border-radius: 15px;
+    border: 1px solid ;
+    border-color: #363636a2;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.10), 
+        -1px 1px 3px 0px rgba(0, 0, 0, 0.09), 
+        -3px 5px 6px 0px rgba(0, 0, 0, 0.08), 
+        -7px 11px 8px 0px rgba(0, 0, 0, 0.05), 
+        -13px 19px 9px 0px rgba(0, 0, 0, 0.01), 
+        -20px 30px 10px 0px rgba(0, 0, 0, 0.00);
+
+    outline: none;
+    padding: 4px 10px;
+    margin: 6px;
+    transition: all 0.3s ease;
+
+}
+
+.bunn{
+    display: grid;
+    justify-content: end;
+}
+
+.btn{
+    width: 7vw;
+    height: 2.8vw;
+    margin: 8px;
+    background-color: #fff;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.10), 
+        -1px 1px 3px 0px rgba(0, 0, 0, 0.09), 
+        -3px 5px 6px 0px rgba(0, 0, 0, 0.08), 
+        -7px 11px 8px 0px rgba(0, 0, 0, 0.05), 
+        -13px 19px 9px 0px rgba(0, 0, 0, 0.01), 
+        -20px 30px 10px 0px rgba(0, 0, 0, 0.00);
+    border: 0;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+.inp:hover,
+.inp:focus,
+.btn:hover{
+    transform: scale(1.05,1.05);
+
+}
+
+h3{
+    margin: 8px;
+}
+
+.jjd{
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    margin: 8vw 0;
+}
+
