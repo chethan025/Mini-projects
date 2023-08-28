@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYC</title>
+    <style>
+        body{
+            background-color: #e4f7fa;
+            
+        }
+
+        div.ckh{
+            
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        div.gdf{
+            width: 100vw;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 5vh;
+            /* position: relative;
+            top: 15vh; */
+
+        }
+        p{
+            font-size: 2.2vh;
+            margin: 0;
+        }
+
+        div.bhk{
+            position: relative;
+            /* background-color: red; */
+            height: 50vh;
+        }
+        
+        button{
+            margin: 2%;
+            padding: 0 3.2vw 0 3.2vw;
+            width: max-content;
+            height: 5vh;
+            border-width: 0.2px;
+            border-radius: 0.5vw;
+            transition: 0.3s ease-in-out;
+        }
+        button:hover{
+            background-color: #e0e2e2;
+        }
+        #btn{
+            position: relative;
+        }
+        #btn::hover{
+            position: absolute;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    
+<div class="ckh">
+    <div class="gdf">
+
+        <h1>Choose Character<p>you want to Be</p></h1>
+
+        <div class="bhk">
+            <button class="real" id="btn" onclick="dhu()">EREN</button>
+
+            <button class="anime" onclick="window.location.href='https://chethan025.github.io/CYW/Choose/Erensmom.html';">Eren's Mom</button>
+        </div>
+
+       
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <script>
+    
+    
+    function dhu(){
+        alert("You are Not Eren. Try another option.");
+    }
+        const button = document.getElementById('btn');
+        button.addEventListener('mouseover', function () {
+            button.style.left = `${Math.ceil(Math.random() * 50)}%`;
+            button.style.top = `${Math.ceil(Math.random() * 100)}%`;
+        });
+    </script>
+
+
+    
+</body>
+</html>
