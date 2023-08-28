@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Cygre-Black-BF63eeebf3942b2.ttf" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <title>Time Ripen</title>
+    <style>
+        body{
+            background: url(blob-scene-haikei.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        @font-face {
+            font-family: 'Cygre';
+            src: url(Cygre-SemiBold-BF63eeebf60aa18.ttf);
+            font-family: 'HKGrotesk';
+            src: url(HKGrotesk-SemiBoldItalic.ttf);
+        }
+        @font-face {
+            font-family: 'KyivTypeTitling';
+            src: url(KyivTypeTitling-Regular3.otf) format("opentype");
+        }
+
+        div.cot{
+            
+            
+            width: 100vw;
+            height: 100vh;
+        }
+        div.get{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+        div.cti{
+            display: grid;
+            background: rgba(48, 56, 65, 0.56);
+            place-items: center;
+            align-self: center;
+            width: 40vw;
+            height: max-content;
+            border-radius: 15px;
+        }
+        
+        div.mji{
+            background-color: rgba(255, 255, 255, 0.61);
+            width: 40vw;
+            height: 15vh;
+            position: relative;
+        }
+        img{
+            position: relative;
+            
+            width: 60vw;
+            height: 22vh;
+        }
+
+        h1{
+            font-family: KyivTypeTitling;
+            color: rgb(226, 226, 226);
+            
+            
+            font-style: normal;
+            font-weight: 350;
+            font-size: 5vw;
+            line-height: 18.5vh;
+
+            text-align: center;
+            /* identical to box height */
+
+
+            color: #EEEEEE;
+        }
+        #age{
+
+            margin: 1.2vh;
+            height: fit-content;
+
+            font-family: Cygre ;
+            
+            font-style: normal;
+            font-weight: 600;
+            font-size: 3vw;
+            line-height: 10vh;
+            letter-spacing: 0.04em;
+
+            color: #EEEEEE;
+        }
+
+        input[type = "number"]{
+            background: #303841;
+            color: #EEEEEE;
+            font-size: 2vw;
+            width: 28vw;
+            height: 5.8vh;
+            outline: none;
+            margin-top: 6vh;
+            padding: 2%;
+            border: 2px solid;
+            border-color: #0bdbe600;
+            border-radius: 1vw;
+            transition: 0.3s ease-in-out;
+        }
+
+        
+        
+        input[type = "number"]::placeholder{
+            font-family: HKGrotesk ;
+            font-style: italic;
+            font-weight: 600;
+            font-size: 1.8vw;
+            letter-spacing: 0.02em;
+            color: rgba(253, 253, 253, 0.42);
+        }
+        input[type = "number"]:focus{
+            border-color: #03a7af;
+        }
+        
+
+        #sub{
+            background: #FF5722;
+            width: 8vw;
+            height: 6vh;
+            margin: 1.2vw;
+
+            font-family: 'Mulish', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.3vw;
+
+            letter-spacing: 0.1em;
+            
+            border: 0px;
+            color: #FFFFFF;
+            transition: 0.3s ease-in-out;
+        }
+        #sub:hover{
+            color: #FF5722;
+            background: #303841;
+        }
+            
+    </style>
+</head>
+<body>
+    
+    <div class="cot">
+        
+        <h1 class="hsa">
+            Time Ripen
+        </h1>
+        <div class="get">
+            <div class="cti">
+                
+                
+                
+                <input id="ip" type="number" name="age" placeholder="enter your age">
+                <button id="sub" onclick="cld()">
+                    Submit
+                </button>
+                <h3 id="age">Enter Your Age to Check</h3>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+
+        var wrte= document.getElementById("ip");
+        wrte.addEventListener("keypress", function(event){
+            if(event.key === "Enter"){
+                event.preventDefault();
+                document.getElementById("sub").click();
+            }
+        });
+        
+
+        function cld()
+        {
+
+            var wrt= Number(document.getElementById("ip").value);
+            var gty=document.getElementById("age");
+
+
+            if(wrt==0){
+                
+                gty.innerHTML="Input your age"
+            }
+
+            else if(wrt>150){
+                gty.innerHTML="Please input valid age"
+            }
+
+            else if(wrt>=100){
+                
+                gty.innerHTML="Just Die"
+            }
+
+            else if(wrt>=80){
+                
+                gty.innerHTML="You are a Old"
+            }
+
+            else if(wrt>=18){
+                
+                gty.innerHTML="You are a Major"
+            }
+
+            else if(wrt<18){
+                
+                gty.innerHTML="You are a Minor"
+            }
+
+            
+        
+
+        }
+
+
+    </script>
+
+
+</body>
+</html>
