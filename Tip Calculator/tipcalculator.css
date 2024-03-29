@@ -5,14 +5,18 @@
 
 
 body{
-    background: #EBEBEB;
+    background: #252525;
     margin: 0;
+    color:#fff;
 }
 
 .cmtt{
     overflow: hidden;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;   
     margin: 0;
+    display: grid;
+    place-items: center;
 }
 
 .background{
@@ -21,22 +25,12 @@ body{
     height: 100vh;
 }
 
-.sbh{
-    position: absolute;
-}
-
 .container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-    margin: auto;
-    width: 95vw;
-    height: 90vh;
+    width: 60vw;
     border: 1px solid;
     border-radius: 50px;
-    backdrop-filter: blur(9px);
+    background: #444444;
+    padding: 5rem;
 
 }
 
@@ -91,7 +85,7 @@ body{
 
 h1{
     text-align: center;
-    margin: 5vw;
+    margin: 0 5vw 5vw;
     font-family: cygre;
 
 }
@@ -111,16 +105,13 @@ h1{
 
 #lbl{
     display: block;
-    width: 18vw;
     text-align: right;
     margin: 12px;
-    font-size: 22px;
+    font-size: 2rem;
 }
 
 .inp{
-    /* display: block; */
-    width:16vw;
-    height: 2vw;
+    height: 1.8vw;
     border-radius: 15px;
     border: 1px solid ;
     border-color: #363636a2;
@@ -135,7 +126,7 @@ h1{
     padding: 4px 10px;
     margin: 6px;
     transition: all 0.3s ease;
-
+    font-size: 1.25rem;
 }
 
 .bunn{
@@ -144,8 +135,7 @@ h1{
 }
 
 .btn{
-    width: 7vw;
-    height: 2.8vw;
+    padding:1rem 2rem;
     margin: 8px;
     background-color: #fff;
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.10), 
@@ -156,6 +146,7 @@ h1{
         -20px 30px 10px 0px rgba(0, 0, 0, 0.00);
     border: 0;
     border-radius: 15px;
+    font-size: 1rem;
     transition: all 0.3s ease;
 }
 .inp:hover,
@@ -173,6 +164,18 @@ h3{
     display: grid;
     width: 100%;
     justify-content: center;
-    margin: 8vw 0;
 }
 
+@media only screen and (max-width:768px) {
+    
+    #lbl{
+        font-size: 1rem;
+    }
+    .inp{
+        font-size: 0.8rem;
+    }
+    .btn{
+        font-size:0.5;
+    padding:0.5rem 1.2rem;
+    }
+}
